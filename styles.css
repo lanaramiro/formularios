@@ -1,0 +1,18 @@
+body{
+    color: #6935ee;
+    background-color: #bca4f6;
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+div label, div input{
+    display: block;
+    border-radius: 8px;
+}

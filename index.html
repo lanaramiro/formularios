@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Aprendendo Formulários!</h1>
+    <form action="register.php" method="GET">
+    <div>
+        <!-- Atributo label -->
+        <label>Nome:</label>
+        <input type="text">
+    </div>
+    <div>
+        <!-- Atributo name -->
+        <label for="age">Idade:</label>
+        <input type="text" name="age">
+    </div>
+    <div>
+         <!-- Atributo select -->
+        <label for="job">Qual a sua profissão?</label>
+        <select name="job">
+            <option value="dev">Programador</option>
+            <option value="tester">Tester/QA</option>
+            <option value="devops">DevOps</option>
+        </select>
+    </div>
+    <!-- Atributo textarea -->
+    <div>
+        <label for="comment">Deixe aqui um comentário sobre a empresa:</label>
+        <textarea name="comment"></textarea>
+    </div>
+    <!-- Atrivuto datalist -->
+     <div>
+        <label for="language">Quais linguagens de programação você sabe?</label>
+        <input type="text" list="languages" name="language">
+        <datalist id="languages">
+            <option value="PHP"></option>
+            <option value="C"></option>
+            <option value="JavaScript"></option>
+            <option value="Ruby"></option>
+            <option value="Python"></option>
+        </datalist>
+     </div>
+        <!-- Envio de forms -->
+        <input type="submit" value="Enviar">
+</body>
+</html>
