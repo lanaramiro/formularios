@@ -12,7 +12,15 @@ div{
     margin-bottom: 10px;
 }
 
+label{
+    margin-bottom: 5px;
+}
+
 div label, div input{
     display: block;
     border-radius: 8px;
+}
+
+.radio label,.radio input, .radio span{
+    display: inline-block;
 }

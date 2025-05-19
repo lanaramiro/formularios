@@ -19,21 +19,51 @@
         <label for="age">Idade:</label>
         <input type="text" name="age">
     </div>
+      <!-- datas -->
+     <div>
+        <label for="birthday">Informe s sua data de nascimento:</label>
+        <input type="date" name="birthday">
+     </div>
     <div>
+    <!-- radio button -->
+    <div>
+        <label for="gender">Você é...</label>
+        <div class="radio">
+            <input type="radio" value="men" name="gender">
+            <label for="men">Homem</label>
+            <input type="radio" value="women" name="gender">
+            <label for="women">Mulher</label>
+        </div>
+    </div>
+        <!-- Email -->
+    <div>
+        <label for="email">Informe seu e-mail:</label>
+        <input type="email" name="email">
+    </div>
          <!-- Atributo select -->
-        <label for="job">Qual a sua profissão?</label>
+        <label for="job">Informe a sua profissão:</label>
         <select name="job">
             <option value="dev">Programador</option>
             <option value="tester">Tester/QA</option>
             <option value="devops">DevOps</option>
         </select>
     </div>
+    <!-- placeholder -->
+      <div>
+        <label for="senior">Informe sua senoridade:</label>
+        <input type="text" name="senior" placeholder="ex: pleno">
+      </div>
     <!-- Atributo textarea -->
     <div>
         <label for="comment">Deixe aqui um comentário sobre a empresa:</label>
         <textarea name="comment"></textarea>
     </div>
-    <!-- Atrivuto datalist -->
+    <!-- disabled -->
+     <div>
+        <label>Você tem algum comentário negativo sobre a empresa?</label>
+        <input type="text" value="Que bom que está satisfeito" disabled>
+     </div>
+    <!-- Atributo datalist -->
      <div>
         <label for="language">Quais linguagens de programação você sabe?</label>
         <input type="text" list="languages" name="language">
@@ -45,7 +75,39 @@
             <option value="Python"></option>
         </datalist>
      </div>
-        <!-- Envio de forms -->
+     <!-- checkbox button -->
+     <div>
+        <label for="drink">Qual bebida você gostaria que a empresa disponibilizasse a vontade?</label>
+        <div class="radio">
+            <input type="checkbox" value="cofee" name="drink[]">
+            <label for="cofee">Café</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" value="tea" name="drink[]">
+            <label for="tea">Chá</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" value="chocolate" name="drink[]">
+            <label for="chocolate">Achocolatado</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" value="sparklingwater" name="drink[]">
+            <label for="sparklingwater">Água com gás</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" value="energetic" name="drink[]">
+            <label for="energetic">Energético</label>
+        </div>
+     </div>
+     <!-- Senha -->
+      <div>
+        <label for="password">Digite sua senha:</label>
+        <input type="password" name="password">
+      </div>
+        <!-- Resetar form -->
+        <input type="reset" value="Limpar">
+        <!-- Envio de form -->
         <input type="submit" value="Enviar">
 </body>
 </html>
+
